@@ -1,0 +1,8 @@
+<h3>Users</h3>
+<p>{{testProperty}}</p>
+{{#each model as |user index|}}
+  {{#users-list user.avatar user.email}}
+    {{user.fullName}}
+  {{/users-list}}
+{{/each}}
+{{outlet}}
